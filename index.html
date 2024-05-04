@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" href="images/logo/logo (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- hero page begins -->
+   <header class="header">
+        <nav class="nav-bar">
+
+          <div class="logo">
+            <a href="index.html"><img src="images/logo/logo (1).png"></a>
+          </div>
+
+            <ul class="navbar">
+                <li>
+                  <a href="#">HOME</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">WORK</a>
+                  <a href="#">SERVICES</a>
+                  <a href="#">TESTIMONIAL</a>
+                  <a href="#">BLOG</a>
+                  <a href="#">CONTACT</a>
+              </li>
+              </ul>
+
+
+            <div class="nav-btn">
+                 <a class="talk" href="#">Lets's Talk →</a>
+          
+                 <span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+            </div>
+
+
+            <!-- slide-nav -->
+            <div id="slidenav" class="slidenav">
+              <a href="javascript:void(0)" class="closeicon" id="closeicon" onclick="closenav()">&times;</a>
+             
+              <img src="images/logo/logo (1).png">
+      
+              <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil
+              </p>
+              
+              <div class="contacts">
+                <h3>ADDRESS</h3>
+                <p>Victoria Street London,</p>
+                <h3>EMAIL</h3>
+                <p>matias999@.com</p>
+                <h3>CALL NOW</h3>
+                <p>+98 4758 2154 021</p>
+
+                <div class="slide-social-icon">
+                  <i class='bx bxl-facebook'></i>
+                  <i class='bx bxl-twitter'></i>
+                  <i class='bx bxl-linkedin'></i>
+                  <i class='bx bxl-youtube'></i>
+                </div>
+              </div>
+
+              <div class="slide-btn">
+                <a href="#">Lets's Talk →</a>
+           </div>
+
+          </div>
+
+        </nav>
+
+      
+      <!-- hero side -->
+      <section class="hero">
+
+        <section class="in-hero">
+
+            <div class="left-v">
+                <p>
+                  <i class='bx bx-dialpad'></i>
+                   (+02)-574-328-301 
+                </p>
+                <h3>
+                    SCROLL DOWN
+                    <img src="images/banner/scroll-down.png">
+                </h3>
+                
+            </div>
+   
+            <section class="hero-content">
+               
+               <div class="hero-intro">
+                <p>
+                    Currently Available For Freelancing<br>Worldwide   ↗
+                </p>
+                <hr>
+
+                <h1>
+                    Creative Visual <br> <span class="text" data-fill-text="Designer">Designer</span>
+                </h1>
+
+                <div class="anim">
+                     <img src="images/banner/bn-arrow.png" class="swingimage">
+                     <i class='bx bx-play-circle bx-burst' style='color:#ffffff' ></i>
+                     <p>Work <br>Process</p>
+                </div>
+
+               </div>
+
+               <div class="hero-img">
+                 <img src="images/banner/banner-man.png">
+               </div>
+
+            </section>
+   
+            <div class="left-v">
+
+              <h3>
+                FOLLOW ME
+                <img src="images/banner/scroll-down.png">
+            </h3>
+              <h2>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-youtube'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-instagram'></i>
+              </h2>
+          </div>
+   
+        </section>
+
+      </section>
+
+      
+        <!-- first slide section -->
+      <marquee>
+        <img src="images/banner/ts1.png">
+        <img src="images/banner/ts2.png">
+        <img src="images/banner/ts3.png">
+        <img src="images/banner/ts4.png">
+        <img src="images/banner/ts5.png">
+        <img src="images/banner/ts6.png">
+        <img src="images/banner/ts7.png">
+        <img src="images/banner/ts8.png">
+      </marquee>
+   </header>
+
+   <!-- intro section -->
+   <section class="body">
+       <div class="about">
+           <img src="images/about/section-star.png">
+           <h3>
+            I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.
+           </h3>
+       </div>
+   </section>
+
+   <!-- tabs section -->
+   <section class="tabing">
+
+    <div class="tabs">
+      <button class="tab" onclick="openTab(event, 'About')">ABOUT</button>
+      <button class="tab" onclick="openTab(event, 'Experience')">EXPERIENCE</button>
+      <button class="tab" onclick="openTab(event, 'Education')">EDUCATION</button>
+      <button class="tab" onclick="openTab(event, 'Skills')">SKILLS</button>
+     </div>
+     
+      <div id="About" class="tab-content">
+        <div class="about-me">
+
+           <div class="photo">
+               <img src="images/about/personal-infothumb.png">
+           </div>
+
+           <div class="abt-details">
+              <h1>Personal Info</h1>
+              <p>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil
+              </p>
+
+              <div class="abt-box">
+
+                  <div class="d-box">
+                    <h3>Email</h3>
+                    <p>dev.mostafizar</p>
+                  </div>
+
+                  <div class="d-box">
+                    <h3>Phone</h3>
+                    <p>01575699193</p>
+                  </div>
+
+              </div>
+
+              <div class="abt-box">
+                
+                <div class="d-box">
+                  <h3>Adress</h3>
+                  <p>Dahagram, Lalmonirhat</p>
+                </div>
+
+                <div class="d-box">
+                  <h3>Follow</h3>
+                  <div class="icos">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-youtube'></i>
+                  </div>
+                </div>
+
+            </div>
+
+           </div>
+        </div>
+     </div>
+     
+    <div id="Experience" class="tab-content">
+      <div class="about-me">
+
+        <div class="photo">
+            <img src="images/about/personal-infothumb.png">
+        </div>
+
+        <div class="Experience-details">
+           <h1>Experience</h1>
+           <p>
+             Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil
+           </p>
+
+            <div class="work-year">
+
+               <p>In 2011</p>
+               <div class="possition">
+                    <h4>Software Engineer</h4>
+                    <p>UI Head & Manager</p>
+               </div>
+
+            </div>
+
+            <div class="work-year">
+
+              <p>In 2016</p>
+              <div class="possition">
+                   <h4>Product Designer</h4>
+                   <p>Head Of Department</p>
+              </div>
+
+           </div>
+
+           <div class="work-year">
+
+            <p>In 2023</p>
+            <div class="possition">
+                 <h4>Senior UI Designer</h4>
+                 <p>Fiverr.com</p>
+            </div>
+
+         </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+     
+     <!--  -->
+     <div id="Education" class="tab-content">
+      <div class="about-me">
+
+        <div class="photo">
+          <img src="images/about/personal-infothumb.png">
+      </div>
+
+        <div class="Experience-details">
+          <h1>Education</h1>
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil
+          </p>
+
+           <div class="work-year">
+
+              <p>2011 - 2013</p>
+              <div class="possition">
+                   <h4>Programming Course</h4>
+                   <p>New York University</p>
+              </div>
+
+           </div>
+
+           <div class="work-year">
+
+             <p>2013 - 2016</p>
+             <div class="possition">
+                  <h4>University Of Design</h4>
+                  <p>Kingston, United States</p>
+             </div>
+
+          </div>
+
+          <div class="work-year">
+
+           <p>2016 - 2018</p>
+           <div class="possition">
+                <h4>Web Design Course</h4>
+                <p>New York</p>
+           </div>
+
+        </div>
+
+
+      </div>
+       
+
+     </div>
+     
+  <div id="Skills" class="tab-content">
+      
+      <!--  -->
+ 
+        <div class="about-me">
+
+           <div class="photo">
+              <img src="images/about/personal-infothumb.png">
+           </div>
+
+        </div>
+      
+      <!--  -->
+     </div>
+     
+
+   </section>
+
+           <!-- second slide section -->
+           <marquee class="slide-2" direction="right">
+            <img src="images/banner/ts1.png">
+            <img src="images/banner/ts2.png">
+            <img src="images/banner/ts3.png">
+            <img src="images/banner/ts4.png">
+            <img src="images/banner/ts5.png">
+            <img src="images/banner/ts6.png">
+            <img src="images/banner/ts7.png">
+            <img src="images/banner/ts8.png">
+          </marquee>
+
+
+        <!-- award section -->
+          <section class="awards">
+              <div class="award-h">
+                  <h1>Our Awards</h1>
+                  <p>View My Work →</p>
+              </div>
+              <hr>
+              <div class="award-R">
+                <p>Site Of The Day</p>
+                <p>CSS & Animation</p>
+                <p>2018</p>
+            </div>
+            <hr>
+            <div class="award-R">
+              <p>Best Business Model</p>
+              <p>New Strategy</p>
+              <p>2019</p>
+          </div>
+          <hr>
+          <div class="award-R">
+            <p>Motion Graphics</p>
+            <p>3D And Visual Effect</p>
+            <p>2020</p>
+        </div>
+        <hr>
+        <div class="award-R">
+          <p>Video Design</p>
+          <p>CSS & Animation</p>
+          <p>2022</p>
+      </div>
+      <hr>
+          </section>
+
+          <!-- project section -->
+      <section class="projects">
+
+        <div class="project-intro">
+             <hr>
+             <p style="font-family: cursive;">Complete Project</p>
+             <hr>
+        </div>
+
+        <h1>Look At My Portfolio And Give Me Your Feedback</h1>
+
+        <div class="proj-1">
+            <div class="img-1">
+              <img src="images/project/pro1.png">
+
+              <div class="under">
+                <div class="under-1">
+                  <h3 style="color: var(--background-color-2);">PRODUCT DESIGN</h3>
+                  <h3 style="color: #ffffff;">Brand Identity & Motion Design</h3>
+                </div>
+                <div class="arrow">↗</div>
+              </div>
+
+            </div>
+            <div class="img-2">
+              <img src="images/project/pro2.png">
+
+              <div class="under">
+                <div class="under-1">
+                  <h3 style="color: var(--background-color-2);">UI/UX DESIGN</h3>
+                  <h3 style="color: #ffffff;">Mobile Application Development</h3>
+                </div>
+                <div class="arrow">↗</div>
+              </div>
+
+            </div>
+        </div>
+
+
+        <div class="proj-1">
+          <div class="img-3">
+            <img src="images/project/pro3.png">
+
+            <div class="under">
+              <div class="under-1">
+                <h3 style="color: var(--background-color-2);">UI/UX DESIGN</h3>
+                <h3 style="color: #ffffff;">Mobile Application</h3>
+              </div>
+              <div class="arrow">↗</div>
+            </div>
+
+          </div>
+          <div class="img-4">
+            <img src="images/project/pro4.png">
+
+            <div class="under">
+              <div class="under-1">
+                <h3 style="color: var(--background-color-2);">UI/UX DESIGN</h3>
+                <h3 style="color: #ffffff;">Mobile Application Development</h3>
+              </div>
+              <div class="arrow">↗</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="proj-1">
+          <div class="img-5">
+            <img src="images/project/pro5.png">
+
+            <div class="under">
+              <div class="under-1">
+                <h3 style="color: var(--background-color-2);">PRODUCT DESIGN</h3>
+                <h3 style="color: #ffffff;">Design & Branding Mokeup</h3>
+              </div>
+              <div class="arrow">↗</div>
+            </div>
+
+          </div>
+          <div class="img-6">
+            <img src="images/project/pro6.png">
+
+            <div class="under">
+              <div class="under-1">
+                <h3 style="color: var(--background-color-2);">UI/UX DESIGN</h3>
+                <h3 style="color: #ffffff;">Mobile Application Development</h3>
+              </div>
+              <div class="arrow">↗</div>
+            </div>
+
+          </div>
+      </div>
+
+      <div class="circle-btn">
+          <a href="#">→<br>Click More Work</a>
+      </div>
+
+      </section>
+
+      <section class="need-proj">
+          <div class="proj-ask">
+            <div class="line-ask">
+              <hr style="background-color: var(--background-color-2); height: 3px;">
+              <p style="color: var(--background-color-2); font-family: cursive; font-size: 30px;">Need A Project?</p>
+            </div>
+            <h1 style="font-size: 50px; color: #ffffff; margin-top: 0px;">Let's Work Together. <br> Fix A Meeting</h1>
+            <hr>
+            <div class="prj-link">
+              <i class='bx bx-envelope'></i>
+                <div class="link-p">
+                    <p style="color: rgb(80, 75, 75); font-size: 25px;">Email</p>
+                    <p style="color: #ffffff; font-size: 25px;">davidmatias3</p>
+                </div>
+            </div>
+            <hr>
+            <div class="prj-link">
+              <i class='bx bx-map'></i>
+                <div class="link-p">
+                    <p style="color: rgb(80, 75, 75); font-size: 25px;">Location</p>
+                    <p style="color: #ffffff; font-size: 25px;">Victoria Street London, England</p>
+                </div>
+            </div>
+            <hr>
+          </div>
+          <img src="images/project/project-need.png">
+      </section>
+
+      <section class="services-p">
+              <div class="provide">
+                  <div class="ty"></div>
+                  <p style="color: var(--background-color-2); font-size: 30px; font-family: cursive;">Services That I Provide</p>
+                  <div class="ty"></div>
+              </div>
+
+             <h1 style="text-align: center; color: white; font-size: 50px; padding: 0px 400px;">
+              My Special Service For Your Business Development
+             </h1>
+
+             <div class="s-list">
+
+              <div class="list-1">
+                  
+              </div>
+
+             </div>
+
+      </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
